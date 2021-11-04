@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to Save Time by Running Tedious Automatically on Every File Change"
+title: "How to Save Time by Running Tedious Tasks Automatically on Every File Change with entr"
 date: 2021-11-03 17:00:00 +0200
 categories: automation
 comments: true
