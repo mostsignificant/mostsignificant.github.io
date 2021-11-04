@@ -17,14 +17,14 @@ image_description: |
 ## Introducing entr
 
 Let me introduce you to a tool called [`entr`][1]. This tool uses [kqueue][2] and [inotify][3] to watch for file changes
-and is able to execute arbitrary commands. This allows us to run all kind of commands during software development when
+and is able to execute arbitrary commands. This allows us to run all kinds of commands during software development when
 source or configuration files change, for example:
 
 - build commands
 - test commands
 - restarting a server
 
-You can also use it to set up a whole automation workflow. However be aware of the increased complexity when chaining
+You can also use it to set up a whole automation workflow. However, be aware of the increased complexity when chaining
 `entr` commands and their triggers together. I prefer to keep it simple and set the tool up as helpful helper to save me
 some time. And to get rid of repetitive, monotonous tasks. Because I don't like repetitive, monotonous tasks.
 
@@ -79,7 +79,7 @@ Run from your build directory and use the `-s` option to pass chained commands:
 find .. -name "*.h" -o -name "*.cc" | entr -s 'cmake --build . && ctest'
 ```
 
-This command will watch changes in header or implamentation files and start a build via CMake plus CTest run on success.
+This command will watch changes in header or implementation files and start a build via CMake plus CTest run on success.
 
 ### Cargo Build and Test Example
 

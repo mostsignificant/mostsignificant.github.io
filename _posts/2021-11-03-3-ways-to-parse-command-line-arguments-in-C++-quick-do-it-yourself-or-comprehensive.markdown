@@ -36,8 +36,8 @@ standard mentions two valid signatures for the [main function](https://en.cppref
 ```
 
 Yes, you guessed right, the second one is the one we are after here. It supplies an array of strings (`argv`) and the
-number of elements in this array (`argc`). We as C++ developers who find happiness in iterating over things, we very
-much like the following quote::
+number of elements in this array (`argc`). As C++ developers who find happiness in iterating over things, we very much
+like the following quote:
 
 > The size of the array pointed to by argv is at least argc+1, and the last element, argv[argc], is guaranteed to be
 > a null pointer.
@@ -98,7 +98,7 @@ use the main branch for further development or future blog posts.
 
 ## Quick-And-Dirty
 
-The first method is the quick hack. Useful if you have only a few arguments and little additional logic (as in: mutual
+The first method is the quick hack. Useful if you have only a few arguments and little additional logic (as in: mutually
 exclusive options, arbitrary ordering, and such). As already shown, you get the number of arguments passed to your
 application via an extra argument. Our dog application needs an input file that is going to be printed to stdout. The
 first argument of the program call shall be this input file (can be relative or absolute path, ifstream will try to open
@@ -128,7 +128,7 @@ if (!input_file.is_open()) {
 }
 ```
 
-As you might have already noticed, this methods works best for a fixed number of command line arguments. Say you want to
+As you might have already noticed, this method works best for a fixed number of command line arguments. Say you want to
 add an optional argument for outputting line numbers, you would need to add more code for checking, maybe similar to
 this:
 
@@ -181,7 +181,6 @@ the following:
 void program_options::parse(int argc, char* argv[]) {
     const std::vector<std::string_view> args(argv + 1, argv + argc);
     // ...
-}
 }
 ```
 
@@ -243,7 +242,8 @@ for (const auto& arg : args) {
 }
 ```
 
-Yes, exceptions. This means a friendly try-and-catch block in the `main` method will help us output readable error descriptions.
+Yes, exceptions. This means a friendly try-and-catch block in the `main` method will help us output readable error
+descriptions.
 
 ```cpp
 try {
@@ -485,7 +485,7 @@ am also not very keen on the builder-pattern-like syntax for adding optionsâ€Š-â
 mess it up. The working implementation for the dog example can be found on the branch
 [dog/tree/method-lib](https://github.com/mostsignificant/dog/tree/method-lib). There are a lot more options in `cxxopts`
 that I haven't used yet, for example `allow_unrecognised_options()`, `default_value(...)`, or `std::vector<T>` support
-for options. They can be checked out in the README file or example source code.
+for options.
 
 ## Conclusion
 

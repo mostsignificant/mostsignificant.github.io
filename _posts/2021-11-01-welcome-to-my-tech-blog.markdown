@@ -16,7 +16,7 @@ image_description: |
 ---
 
 This is indeed my first post in this blog. It is just a description of what you can expect from this sort of blog. I
-like to spend some of my free time with toying around with different programming languages, frameworks or libraries. So
+like to spend some of my free time toying around with different programming languages, frameworks or libraries. So
 instead of having 100s of unfinished projects on my hard drive dying the legacy-death, I decided to finish some of them
 to a MVP\* and write about it.
 
