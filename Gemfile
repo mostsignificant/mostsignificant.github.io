@@ -30,3 +30,6 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
 # https://github.com/jekyll/jekyll/issues/8523
 gem "webrick"
+
+# Embedding of tweets
+gem 'jekyll-twitter-plugin'
