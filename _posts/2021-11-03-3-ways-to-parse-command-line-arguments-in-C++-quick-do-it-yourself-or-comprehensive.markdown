@@ -3,6 +3,7 @@ layout: post
 title: "3 Ways To Parse Command Line Arguments in C++: Quick, Do-It-Yourself, Or Comprehensive"
 date: 2021-11-03 17:00:00 +0200
 categories: C++
+comments: true
 published: true
 excerpt: |
   If you are writing a C++ tool you often need the user to pass in arguments via the command line. And like many other

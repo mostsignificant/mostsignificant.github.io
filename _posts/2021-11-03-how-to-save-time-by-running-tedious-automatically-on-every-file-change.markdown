@@ -3,6 +3,7 @@ layout: post
 title: "How to Save Time by Running Tedious Automatically on Every File Change"
 date: 2021-11-03 17:00:00 +0200
 categories: automation
+comments: true
 published: true
 excerpt: |
   If you recompile often when writing software then you might tlike this little timesaver: automatically running a
