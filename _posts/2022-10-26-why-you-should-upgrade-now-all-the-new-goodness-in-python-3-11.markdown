@@ -72,7 +72,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; \
 iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 ```
 
-Then you can use the Chocolatey to install via command line:
+Then you can use Chocolatey to install Python 3.11 via command line:
 
 ```sh
 choco install python -y --version 3.11
