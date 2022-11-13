@@ -15,9 +15,9 @@ image_description: |
 
 ## Overview
 
+- Apache Spark
 - Apache Kafka
 - Apache Zookeeper
-- Apache Spark
 - Apache Hadoop (HDFS)
 - Apache YARN
 
