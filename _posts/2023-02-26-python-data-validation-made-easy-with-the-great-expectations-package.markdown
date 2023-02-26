@@ -372,3 +372,5 @@ reduced risk of errors and inaccuracies in downstream analysis, and streamlined 
 flexible and can be integrated into a variety of data stacks, and it offers both open source and cloud-based options for
 use. Overall, Great Expectations is a powerful tool for ensuring the reliability and accuracy of data used in analytics
 and decision-making.
+
+Keep on coding and keep on creating!
