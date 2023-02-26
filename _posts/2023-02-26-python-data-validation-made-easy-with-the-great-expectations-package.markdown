@@ -230,7 +230,7 @@ you're ready to select an asset, enter the index.
 ```
 
 ```sh
-Name the new Expectation Suite [stations.json.warning]: airbnb.boston.listings.csv
+Name the new Expectation Suite [listings.csv.warning]: airbnb.boston.listings.csv
 ```
 
 The Data Assistant will sum up your selections and explain the next steps. We will confirm the actions with `Y`.
