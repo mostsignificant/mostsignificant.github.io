@@ -31,6 +31,7 @@ def main(title: str, categories: str, date: datetime):
     title = title.replace('.', '')
     title = title.replace('!', '')
     title = title.replace('-', '')
+    title = title.replace(':', '')
     title = title.replace(' ', '-')
 
     date = date.strftime('%Y-%m-%d')
