@@ -6,7 +6,7 @@ categories:
 comments: true
 published: true
 excerpt: |
-  The new year is here and it is the time for resolutions again. For software development folk starting a new hobby 
+  The new year is here and it is the time for resolutions again. For software development folks starting a new hobby 
   project could be the new plan for the year - and this post should give some inspirations and spark new ideas.
 image_url: /assets/images/unsplash/mohdammed-ali-zZvofYjfVXw-unsplash.jpg
 image_description: |
@@ -16,8 +16,8 @@ image_description: |
 
 ## Overview
 
-The following list is a collection of ideas to implement in 2024. Be aware that those are just rough ideas that you can
-iterate on as you see fit. Each Idea has a section at the end specifying the following:
+The following list is a collection of ideas to implement in 2024. Be aware that these are just rough ideas that you can
+iterate on as you see fit. Each idea has a section at the end specifying the following:
 
 - **Architecture**: Recommended architecture for implementation
 - **Technology**: Recommended programming languages for implementation
@@ -50,7 +50,7 @@ out there but there is always room for another one, especially if tailored speci
 
 The tool could allow for checking certificates and their expiration dates on remote machines. It could manage its own
 repository with metadata information about the certificates on the machines. Additionally the tool could offer features
-for easy deployment of new certificates, revoking certificates and other helpful functions for certificate management,
+for easy deployment of new certificates, revoking certificates and other helpful functions for certificate management.
 
 - **Architecture**: Command Line Tool
 - **Technology**: System Language (e. g. C++ or Rust) or Executable Packaged Script (e. g. Python or JavaScript)
@@ -94,7 +94,8 @@ Python or individual SQL scripts.
 An online unit converter exists for every unit in existence. However, it seems that every one of these sites is just for
 one specific unit conversion (e. g. meters to feet or milliliters to ounces) and they are all separate. Additionally,
 each one requires the click of a "Convert!" button before the conversion happens. There is a nice niche for a site
-supporting all units on a one-pager and allow for conversion as soon as the user types in the value.
+supporting all units on a one-pager and which converts from one unit to another one live as soon as the user types in
+the value.
 
 - **Architecture**: Client-side web app
 - **Technology**: Client web technology stack (JavaScript) or Webassembly (e. g. Rust with Yew)
@@ -149,7 +150,7 @@ tasks, dates, and notes or documents and links. Additionally, sharing the projec
 have a concrete project yourself, you could tailor the software to your own needs, to follow an
 [eating-your-own-dog-food](https://en.wikipedia.org/wiki/Eating_your_own_dog_food) approach. This way it might be easier
 to implement for only one use-case, e. g. home remodeling projects, instead of supporting too many different use cases
-and make the software to generic.
+and making the software to generic.
 
 The software should be hosted, so users can access it to create their projects. It needs user management, a database to
 store the projects, etc. The feature creep could cause the implementation to become overwhelming, so be sure to
@@ -171,8 +172,8 @@ This could be implemented as SaaS: either the companies provide access to their 
 integration) or they let your client CLI tool run in their own CI/CD environment, which then communicates with the SaaS
 to send the found library or license information.
 
-However, be careful to include a chapter in your terms of use to safe yourself against lawsuits: the responsibility to
-provide the correct information should always stay at the company and your SaaS is just a tool to help, not to be the
+However, be careful to include a chapter in your terms of use to protect yourself against lawsuits: the responsibility
+to provide the correct information should always stay at the company and your SaaS is just a tool to help, not be the
 actual responsible instance for any lawful matter.
 
 - **Architecture**: SaaS
@@ -197,7 +198,7 @@ specific code parser but rather just count lines, measure file meta data, etc.
 ## 12. Hobby Software Development Project Idea Generator
 
 In case you are running out of ideas - just build a generator for creating new ideas for your next hobby dev projects!
-The generator might take some input or picks random topics, tech stacks, and feature lists to combine to a new idea. It
+The generator might take some input or pick random topics, tech stacks, and feature lists to combine to a new idea. It
 might get more difficult if you want the generator to create more meaningful ideas. A purely random generator could
 spit out a lot of nonsense ideas (e. g. database reverse gateway in Webassembly) but be an inspiration for your next
 idea to build upon. You just have to decide between quality and quantity (or provide a slider control to regulate
@@ -211,5 +212,5 @@ between quantity and quality to affect randomness).
 ## Conclusion
 
 There are never not enough ideas for hobby projects - and this year might be the best opportunity to start a new one!
-Even if you did not find something in this list you might be able to build upon one of those ideas to implement your own
-next project. Keep on coding and keep on creating!
+Even if you did not find something in this list, you might be able to build upon one of those ideas to implement your
+own next project. Keep on coding and keep on creating!
