@@ -245,7 +245,7 @@ async fn set(request: HttpRequest, post: web::Bytes, data: web::Data<AppState>) 
             .content_type(ContentType::plaintext())
             .body("value updated"),
     }
-}
+}python
 ```
 
 In almost the same manner: the deletion method. It removes the key if found. If the key does not exist, it returns the
