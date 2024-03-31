@@ -263,7 +263,7 @@ docker ps
 
 ```sh
 CONTAINER ID   IMAGE                                     COMMAND                  CREATED         STATUS         PORTS                    NAMES
-49021e2099d7   mostsignificant/iowa:latest   "./app/simplehttpser…"   3 seconds ago   Up 2 seconds   0.0.0.0:1984->1984/tcp   sad_visvesvaraya
+49021e2099d7   mostsignificant/iowa:latest   "./app/iowa"   3 seconds ago   Up 2 seconds   0.0.0.0:1984->1984/tcp   sad_visvesvaraya
 ```
 
 The container names are randomly generated if not specified otherwise - in our case _sad_visvesvaraya_ (read more about
