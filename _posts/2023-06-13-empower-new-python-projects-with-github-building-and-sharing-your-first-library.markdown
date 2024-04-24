@@ -206,4 +206,4 @@ are some additional ideas that can be implemented:
 - Generation and publishing of documentation (for example via
   [readthedocs](https://docs.readthedocs.io/en/stable/tutorial/index.html))
 - Integration testing, in our example library via a real database and calling the tool via CLI
-- Usage of several linters for linting
+- Usage of more than just one linter for linting
