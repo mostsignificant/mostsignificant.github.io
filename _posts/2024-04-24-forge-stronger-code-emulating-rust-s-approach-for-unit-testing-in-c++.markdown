@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Forge Stronger Code: Emulating Rust's Approach for Unit Testing in C++"
-date: 2024-04-24 22:09:10 +0200
+date: 2024-04-24 22:00:00 +0200
 categories: C++ Testing Rust
 comments: true
 published: true
