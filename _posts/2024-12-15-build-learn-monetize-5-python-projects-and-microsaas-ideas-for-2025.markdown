@@ -6,7 +6,7 @@ categories:
 comments: true
 published: true
 excerpt: |
-  2025 is rolling around and it is time again to make plans for the new year. Software developer hobbyists and solopreneurs alike can get inspiration from my list of five software hobby project ideas and potential micro SaaS ventures.
+  2025 is rolling around the corner and it is time again to make plans for the new year. Software developer hobbyists and solopreneurs alike can get inspiration from my list of five software hobby project ideas and potential micro SaaS ventures.
 image_url: /assets/images/unsplash/spacex-TV2gg2kZD1o-unsplash.jpg
 image_description: |
   Photo by [SpaceX](https://unsplash.com/@spacex?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
