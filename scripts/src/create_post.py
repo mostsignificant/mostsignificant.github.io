@@ -9,7 +9,7 @@ title: "{{ title }}"
 date: {{ date }}
 categories: {{ categories }}
 comments: true
-published: true
+published: false
 excerpt: |
   
 image_url: /assets/images/unsplash/PATH.jpg
@@ -32,10 +32,12 @@ def main(title: str, categories: str, date: datetime):
     title = title.lower()
     title = title.replace("?", "")
     title = title.replace(".", "")
+    title = title.replace(",", "")
     title = title.replace("!", "")
     title = title.replace("-", "")
     title = title.replace(":", "")
     title = title.replace(" ", "-")
+    title = title.replace("/", "-")
 
     date = date.strftime("%Y-%m-%d")
 

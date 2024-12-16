@@ -222,6 +222,8 @@ GEM
     multipart-post (2.1.1)
     net-http-persistent (4.0.1)
       connection_pool (~> 2.2)
+    nokogiri (1.11.3-arm64-darwin)
+      racc (~> 1.4)
     nokogiri (1.11.3-x86_64-darwin)
       racc (~> 1.4)
     octokit (4.20.0)
@@ -231,7 +233,7 @@ GEM
       forwardable-extended (~> 2.6)
     public_suffix (4.0.6)
     racc (1.5.2)
-    rb-fsevent (0.10.4)
+    rb-fsevent (0.11.2)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rexml (3.2.5)
@@ -266,6 +268,7 @@ GEM
     zeitwerk (2.4.2)
 
 PLATFORMS
+  universal-darwin-24
   x86_64-darwin-18
 
 DEPENDENCIES

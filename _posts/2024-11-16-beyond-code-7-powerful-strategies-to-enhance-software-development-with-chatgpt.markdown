@@ -15,13 +15,13 @@ image_description: |
 
 We take a different approach to using ChatGPT as an assistant in software development. 99% of tutorials show how to use AI for generating source code. But in reality, writing new source code makes just 20% of a software developer's daily workload. There are a lot of other tasks that can be improved and simplified with ChatGPT. This article shows seven areas where this can be applied:
 
-- Review
-- Testing
-- Documentation
-- Debugging
-- Architecture
-- Refactoring
-- Automation
+1. Review
+2. Testing
+3. Documentation
+4. Debugging
+5. Architecture
+6. Refactoring
+7. Automation
 
 We will sketch out the general concept for applying ChatGPT in these areas and give some concrete examples including practical prompts for further inspiration to get started. Let's get started.
 
@@ -37,7 +37,6 @@ How does this look like in practice?
 function fetchData(url) {
   let data = null;
 
-  // Simulate fetching data from an API
   fetch(url)
     .then((response) => response.json())
     .then((json) => {
@@ -48,13 +47,17 @@ function fetchData(url) {
       console.error("Error fetching data:", error);
     });
 
-  return data; // Issue: Returning data before the fetch is completed
+  return data;
 }
 
 fetchData("https://api.example.com/data");
 ```
 
+
+
 ## 2. Test Code Generation
+
+
 
 ## 3. Documentation Creation
 
