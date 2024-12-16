@@ -6,15 +6,13 @@ categories:
 comments: true
 published: true
 excerpt: |
-  
-image_url: /assets/images/unsplash/PATH.jpg
+  2025 is rolling around and it is time again to make plans for the new year. Software developer hobbyists and solopreneurs alike can get inspiration from my list of five software hobby project ideas and potential micro SaaS ventures.
+image_url: /assets/images/unsplash/spacex-TV2gg2kZD1o-unsplash.jpg
 image_description: |
-  Photo by [NAME](https://unsplash.com/USERNAME?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-  on [Unsplash](https://unsplash.com/photos/HASH?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+  Photo by [SpaceX](https://unsplash.com/@spacex?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+  on [Unsplash](https://unsplash.com/photos/cosmic-view-during-night-time-TV2gg2kZD1o?utm_content=creditCopyText)
 ---
-
-2025 is rolling around and it is this time again to set up plans for the new year. Software developer hobbyists and solopreneurs alike can get inspiration from my list of five software hobby project ideas and potential micro SaaS ventures.
-
+      
 I will describe these project ideas:
 
 1. Personal Emailer/Newsletter Service
@@ -29,9 +27,9 @@ Let's get started!
 
 The first idea is a service for sending personalized emails.
 
-These emails can be "personalized daily summaries" or "habit-building reminders". The service is actually the gateway through which another service can send those emails with the corresponding content. Besides the API the service offers a simple UI to create and send those emails.
+These emails can be "personalized daily summaries" or "habit-building reminders". The service is actually the gateway through which another service can send those emails with the corresponding content. Besides the API, the service offers a simple UI to create and send those emails.
 
-A battle-tested web framework like [`Django`](https://www.djangoproject.com) is more than enough for implementing a web app capable of these features. Django follows the MVT-pattern (model, views and templates) to serve websites to the user. The framework has an easy learning curve to get websites implemented quickly.
+A battle-tested web framework like [`Django`](https://www.djangoproject.com) is more than enough for implementing a web app capable of these features. Django follows the MVT-pattern (model, views and templates) to serve websites to the user. The framework can easily learn to implement websites quickly.
 
 The emails can either be sent directly or scheduled for later dispatch. For scheduling, there is a Python library called [`schedule`](https://schedule.readthedocs.io/en/stable/) to call a function at specific times. This can be used to send a daily summary, for example.
 
@@ -49,9 +47,9 @@ while True:
     time.sleep(1)
 ```
 
-So how do you send a email from Python code? There are two possibilities:
+So how do you send an email using Python code? There are two possibilities:
 
-- Sending via SMTP: This needs a server name, username and password to send the email. The Python library `smtplib` offers uncomplicated interaction with a SMTP server. In this case a dedicated SMTP server is needed or each user can enter custom access details for an external server (BYOS = bring your own server).
+- Sending via SMTP: This needs a server name, username and password to send the email. The Python library `smtplib` offers uncomplicated interaction with an SMTP server. In this case a dedicated SMTP server is needed, or each user can enter custom access details for an external server (BYOS = bring your own server).
 - Sending via a web service: Services like _SendGrid API_ offer an API to send emails. For even more convenience, it comes with its own Python SDK! This gets sending an email via _SendGrid API_ done in a few lines of code.
 
 ```python
@@ -70,17 +68,17 @@ response = sg.client.mail.send.post(request_body=mail.get())
 
 These values and configurations need to be stored.
 
-A simple database is enough for this purpose, for example _PostgreSQL_. If a SaaS-first approach is preferred, a service like MongoDB's [Atlas](https://www.mongodb.com/products/platform/atlas-database) might do the job. It is a bit over-engineered for a simple email-service, but the deployment of a database can be difficult. This is basically the exchange of money for convenience and peace of mind.
+A simple database is enough for this purpose, for example _PostgreSQL_. If a SaaS-first approach is preferred, a service like MongoDB's [Atlas](https://www.mongodb.com/products/platform/atlas-database) might do the job. It is slightly over-engineered for a simple email-service, but the deployment of a database can be difficult. This is basically the exchange of money for convenience and peace of mind.
 
-Putting these parts together, this leads to a high-level architecture similar to this:
+Putting these parts together leads to a high-level architecture similar to this:
 
 ![Mailer High-Level View](/assets/images/posts/2024_12_15_mailer.png "Mailer High-Level View")
 
 After implementing a working minimal viable product (MVP), this can be turned into a micro-SaaS. 
 
-Monetization can be done via subscriptions. These subscriptions can have pricing tiers that differ by email volume limits and additional features, for example advanced analytics.
+Monetization can be done via subscriptions. These subscriptions can have pricing tiers that differ through email volume limits and additional features, for example advanced analytics.
 
-A suitable hosting solution to deploy this SaaS can be found on this list: [Top 9 Django Compatible Hosting Services + Deploying Steps](https://djangostars.com/blog/top-django-compatible-hosting-services/). Do not forget to price the service according to indirect SaaS costs that incur for example from the SendGrid API or MongoDB Atlas service.
+A suitable hosting solution to deploy this SaaS can be found on this list: [Top 9 Django Compatible Hosting Services + Deploying Steps](https://djangostars.com/blog/top-django-compatible-hosting-services/). Do not forget to price the service according to indirect SaaS costs that incur, for example from the SendGrid API or MongoDB Atlas service.
 
 These are the basic steps for a mailer web service.
 
@@ -112,13 +110,13 @@ Yes, if it fills a specific niche. For example, the tool could focus on specific
 
 ## 3. Web Scraping as a Service
 
-The web is full of data–just not so easy to process.
+The web is full of data – it's just not so easy to process.
 
-This is where web scraping comes in. Web scraping is ["used for extracting data from websites."](https://en.wikipedia.org/wiki/Web_scraping) Imagine a website for soccer results: you want to store the results in a database to analyze them later. These results are probably embedded in tables and other HTML- and CSS-spaghetti, needing a robust, repeatable process to extract the raw data daily.
+This is where web scraping comes in. Web scraping is ["used for extracting data from websites."](https://en.wikipedia.org/wiki/Web_scraping) Imagine a website that shows soccer results: you want to store the results in a database to analyze them later. These results are probably embedded in tables and other HTML- and CSS-spaghetti, needing a robust, repeatable process to extract the raw data daily.
 
-Python provides libraries like [`BeautifulSoup`](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) or [`Scrapy`](https://scrapy.org) that help with parsing HTML code. The famous book [`Automate the Boring Stuff with Python`](https://automatetheboringstuff.com/chapter11/) has a full chapter on this technique. Basic HTML knowledge is required to parse through a website's markup efficiently.
+Python provides libraries like [`BeautifulSoup`](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) or [`Scrapy`](https://scrapy.org) that help with parsing HTML code. The following well known book [`Automate the Boring Stuff with Python`](https://automatetheboringstuff.com/chapter11/) has a full chapter on this technique. Basic HTML knowledge is required to parse through a website's markup efficiently.
 
-A simple few lines of code to get all links from a website looks like this:
+A few simple lines of code to retrieve all links from a website looks like this:
 
 ```python
 import requests
@@ -140,7 +138,7 @@ The web scraping service offers an easy API to scrape a website:
 
 The response from the service should include any error handling when the parsing fails. If everything works, the raw, parsed data is returned.
 
-Any schedules and configurations for parsing should be stored in a database. The actual parsed data should not go into the database to prevent overflow.
+Any schedules and configurations for parsing should be stored in a database. The actual parsed data should not flow into the database to prevent overflow.
 
 For a frontend it makes sense to use a web framework like `Django` and scheduling can be done via the `schedule` package. Make sure to store the schedules in the database to persist the configuration over restarts.
 
@@ -161,7 +159,7 @@ Good luck with this web scraper service!
 
 Services fail silently.
 
-To avoid being in the dark about your service's health, it's essential keep an eye on those. Solutions for monitoring services range from expensive monitor suites and log services to self-written frameworks. A simple service for indie hackers and micro-SaaS developers could provide just enough functionality to quickly set up effective monitoring.
+To avoid being in the dark about your service's health, it's essential to keep an eye on those. Solutions for monitoring services range from expensive monitor suites and log services to self-written frameworks. A simple service for indie hackers and micro-SaaS developers could provide just enough functionality to quickly set up effective monitoring.
 
 This tool could offer these features:
 
@@ -211,7 +209,7 @@ Have fun developing the monitoring service—even if just for your own services.
 
 ## 5. URL Shortener with Analytics
 
-Sometimes some URLs are somehow to long.
+Sometimes some URLs are somehow too long.
 
 That is why URL shorteners exist. They take an existing URL and provide a shortened version, which redirects any user to the original URL. These shortened versions are URLs from a URL shortener service with a randomized id, for example [https://bit.ly/3Bg19uM](https://bit.ly/3Bg19uM), which redirects the user to [https://eu.usatoday.com/story/travel/2022/02/10/amtrak-deal-valentines-offer-sale/6741296001/](https://eu.usatoday.com/story/travel/2022/02/10/amtrak-deal-valentines-offer-sale/6741296001/).
 
@@ -227,7 +225,7 @@ app = Flask(__name__)
 url_mapping = {}
 ```
 
-Provide an endpoint to create shortened URLs. Every shortened URL will be stored. Be aware that this is a simplified method for shortening: for example it does not check for collisions.
+Provide an endpoint to create shortened URLs. Every shortened URL will be stored. Be aware that this is a simplified method for shortening: it does not check for collisions, for example.
 
 ```python
 @app.route('/shorten', methods=['POST'])
@@ -257,7 +255,7 @@ if __name__ == '__main__':
 
 Is this everything?
 
-No, there is a need to persist the mapping over restarts: a database. A user interface to let users configure shortened URLs: also Flask and simple HTML pages with CSS.
+No, there is a need to persist the mapping over restarts: a database. Also: a user interface to let users configure shortened URLs with Flask and simple HTML pages with CSS.
 
 The overall composition is still quite simple:
 
@@ -282,7 +280,7 @@ Every built project is another learning experience.
 
 As a software developer, gaining new knowledge is important to stay up-to-date. This list of project ideas is here to inspire your next adventure and provide an opportunity to try something new.
 
-Each project has a potential to be developed into a micro SaaS for monetization. Even as simple hobby projects or open-sourced on GitHub, they are worth building and learning from.
+Each project has the potential to be developed into a micro SaaS for monetization. Even as simple hobby or open-sourced projects on GitHub, they are worth building and learning from.
 
 Some projects become successful and popular, while others remain on your disk infinitely. And that is okay, too. In the end, it is better than doing nothing and staying where you are.
 
