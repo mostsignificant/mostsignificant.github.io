@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Software Development Must-Reads: Domain-Driven Design by Eric Evans"
-date: 2025-01-15 08:00:00 +0000
+date: 2025-01-01 08:00:00 +0000
 categories:
 comments: true
 published: true
