@@ -1,25 +1,20 @@
 ---
 layout: post
 title: "Master React Native Testing: Unit and Component Tests for Mobile Apps"
-date: 2025-02-01 00:00:00 +0200
+date: 2025-02-08 00:00:00 +0200
 categories: Mobile React Native Testing
 comments: true
-published: false
+published: true
 excerpt: |
-
-image_url: /assets/images/unsplash/PATH.jpg
+  Your mobile app needs testing. Bugs will scare away your users. The users will forgive some bugs. They will demand fixes. But they will uninstall if the bugs make a mobile app unusable.
+image_url: /assets/images/posts/2025_02_08_master_react_native_testing.jpeg
 image_description: |
-  Photo by [NAME](https://unsplash.com/USERNAME?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-  on [Unsplash](https://unsplash.com/photos/HASH?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+  React Native Unit Testing with Jest and Component Testing with RNTL
 ---
-
-## Introduction
 
 > Legacy code is code without tests.
 >
 > – Michael C. Feathers, Working Effectively with Legacy Code
-
-Your mobile app needs testing. Bugs will scare away your users. The users will forgive some bugs. They will demand fixes. But they will uninstall if the bugs make a mobile app unusable.
 
 In this article I will show you two important building blocks of automated testing for React Native mobile apps:
 
@@ -157,14 +152,14 @@ npm install --save-dev react-test-renderer@18.3.1
 If you create the component tests inside an already existing mobile app's code base you probably have to adapt some things to get RNTL running. Troubleshooting can be done via their [documentation](https://callstack.github.io/react-native-testing-library/docs/guides/troubleshooting) or [Stack Overflow](https://stackoverflow.com/questions/tagged/react-native-testing-library). I've had to do the following to overcome the testing issues:
 
 - Mock the `react-redux` functions
-- Adapt the `[transformIgnorePatterns]`(https://stackoverflow.com/questions/51994111/jest-encountered-an-unexpected-token) in a `jest.config.js` file
+- Adapt the [`transformIgnorePatterns`](https://stackoverflow.com/questions/51994111/jest-encountered-an-unexpected-token) in a `jest.config.js` file
 - [Fix](https://stackoverflow.com/questions/64848733/react-native-jest-preset-js-file-missing-error) the `preset` path also in the `jest.config.js` file
 
 I am not 100% sure if this was related to actual code issues or my test setup not being created with the mobile app initialization. But it's worth fixing the initial issues. It's easier if you're already starting your new mobile app with the component tests so you can adapt the configuration as you go.
 
 My mobile app _ABZ Game_ has a component called `GameTile`. This component displays a letter inside a rectangle with rounded corners and a linear gradient background. These tiles can be moved on the game grid and turn into the next letter of the alphabet when combined. I needed a component test for this central game element. Similar to unit tests, I created a `__test__` folder next to the component's file and named it `GameTile.test.js`. The content follows the Jest unit test structure.
 
-![GameTile component letter "Z"](/assets/images/posts/2025_02_01_GameTile_Z.png "GameTile component letter Z")
+![GameTile component letter "Z"](/assets/images/posts/2025_02_08_GameTile_Z.png "GameTile component letter Z")
 
 First, you want to import the necessary RNTL methods and the component you want to test.
 

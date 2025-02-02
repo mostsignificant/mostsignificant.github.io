@@ -34,7 +34,6 @@ def main(title: str, categories: str, date: datetime):
     title = title.replace(".", "")
     title = title.replace(",", "")
     title = title.replace("!", "")
-    title = title.replace("-", "")
     title = title.replace(":", "")
     title = title.replace(" ", "-")
     title = title.replace("/", "-")
