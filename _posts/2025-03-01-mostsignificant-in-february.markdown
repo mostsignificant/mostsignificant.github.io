@@ -7,7 +7,7 @@ comments: true
 published: true
 excerpt: |
   Email spam, Jevons paradox, AI court ruling, a video game history library, $1.5bn Ethereum stolen
-image_url: /assets/images/posts/2025_02_01_mostsignificant_in_february.jpeg
+image_url: /assets/images/posts/2025_03_01_mostsignificant_in_february.jpeg
 image_description: |
   mostsignificant monthly - February 2025 issue
 ---
