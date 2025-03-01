@@ -7,7 +7,7 @@ comments: true
 published: true
 excerpt: |
   2025 was off to a turbulent start. I’m still unsure where the AI hype is headed — or who will lead it. China’s DeepSeek showed that small teams remain a force to be reckoned with, while Silicon Valley’s billions aren’t always the deciding factor.
-image_url: /assets/images/posts/2025_02_01_mostsignificant_monthly_january.jpeg
+image_url: /assets/images/posts/2025_02_01_mostsignificant_in_january.jpeg
 image_description: |
   mostsignificant monthly - January 2025 issue
 ---
